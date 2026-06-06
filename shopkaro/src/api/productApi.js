@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_API_BASE || "http://localhost:8080/api";
-
+const BASE_URL = process.env.REACT_APP_API_BASE || "https://ingenious-luck-production.up.railway.app/api";
 const api = axios.create({ baseURL: BASE_URL });
 
 // GET /api/products

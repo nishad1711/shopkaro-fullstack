@@ -13,7 +13,10 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://shopkaro.vercel.app"
+})
 @RequestMapping("/api")
 public class productcontroller {
     @Autowired
